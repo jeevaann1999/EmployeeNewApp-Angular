@@ -9,6 +9,7 @@ import { FormsModule } from '@angular/forms';
 import { NavigationComponent } from './navigation/navigation.component';
 import { ViewEmployeeComponent } from './view-employee/view-employee.component';
 import { HttpClientModule } from '@angular/common/http';
+import { SearchEmployeeComponent } from './search-employee/search-employee.component';
 
 const myRoute:Routes=[
   {
@@ -19,7 +20,13 @@ const myRoute:Routes=[
     path:"view",
     component:ViewEmployeeComponent
     
+  },
+  {
+    path:"search",
+    component:SearchEmployeeComponent
+    
   }
+
 ]
 
 @NgModule({
@@ -27,7 +34,8 @@ const myRoute:Routes=[
     AppComponent,
     AddEmployeeComponent,
     NavigationComponent,
-    ViewEmployeeComponent
+    ViewEmployeeComponent,
+    SearchEmployeeComponent
   ],
   imports: [
     BrowserModule,
