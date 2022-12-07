@@ -7,6 +7,7 @@ import { AddEmployeeComponent } from './add-employee/add-employee.component';
 import { RouterModule, Routes } from '@angular/router';
 import { FormsModule } from '@angular/forms';
 import { NavigationComponent } from './navigation/navigation.component';
+import { ViewEmployeeComponent } from './view-employee/view-employee.component';
 
 const myRoute:Routes=[
   {
@@ -15,6 +16,7 @@ const myRoute:Routes=[
   },
   {
     path:"view",
+    component:ViewEmployeeComponent
     
   }
 ]
@@ -23,7 +25,8 @@ const myRoute:Routes=[
   declarations: [
     AppComponent,
     AddEmployeeComponent,
-    NavigationComponent
+    NavigationComponent,
+    ViewEmployeeComponent
   ],
   imports: [
     BrowserModule,

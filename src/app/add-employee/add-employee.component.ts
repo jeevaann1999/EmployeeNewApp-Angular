@@ -27,5 +27,6 @@ export class AddEmployeeComponent {
      "password":this.password
 
     }
+    console.log(employee)
   }
 }
